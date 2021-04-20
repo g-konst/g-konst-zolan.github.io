@@ -1,0 +1,32 @@
+# General Site Settings
+title: G-Blog
+# logo: logo.svg
+description: Blog about programming and software development.
+
+# Author Settings
+author:
+  name: Konstantin Grudnitskiy
+  say-hello: Hello, I’m <strong>Konstantin</strong>
+
+
+# Contact links
+github: https://github.com/g-konst
+instagram: https://instagram.com/k_grudnitskiy # Add your Instagram handle
+# twitter: https://twitter.com/ # Add your Twitter handle
+# facebook: https://facebook.com/ # Add your Facebook handle
+# dribbble: https://dribbble.com/ # Add your Dribbble handle
+# pinterest: https://pinterest.com/ # Add your Pinterest handle
+
+# Comment Section (Disqus)
+disqus-identifier: k_grudnitskiy
+
+# Instagram Feed
+instafeed: false
+instagram-profile: k_grudnitskiy
+
+# Google Analytics, AdSense
+google-analytics: G-XM0Q5FKKZR
+google-adsense: ca-pub-6166659721842600
+
+# Newsletter
+# mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
