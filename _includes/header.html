@@ -6,10 +6,10 @@
 
           <div class="logo">
             <a class="logo__link" href="{{site.baseurl}}/">
-            {%if site.data.settings.logo %}
-              <img class="logo__image" src="{{ site.baseurl }}/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
+            {%if site.logo %}
+              <img class="logo__image" src="{{ site.baseurl }}/images/{{ site.logo }}" alt="{% t main.title %}">
             {% else %}
-              {{ site.data.settings.title }}
+              {% t main.title %}
             {% endif %}
             </a>
           </div>
@@ -21,17 +21,17 @@
                 <i class="ion ion-ios-close-circle-outline"></i>
               </div>
 
-              <div class="nav__title">Menu</div>
+              <div class="nav__title">{% t header.menu %}</div>
 
               <ul class="nav__list list-reset">
                 <li class="nav__item">
-                  <a href="{{site.baseurl}}/" class="nav__link">Home</a>
+                  <a href="{{site.baseurl}}/" class="nav__link">{% t header.home %}</a>
                 </li>
                 {% for page in site.pages %}
                   {% unless page.name == 'tags.html' or page.name == '404.html' %}
-                {% if page.title %}
+                {% if page.titles %}
                 <li class="nav__item">
-                  <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.title }}</a>
+                  <a href="{{ page.url | prepend: site.baseurl }}" class="nav__link">{{ page.titles[site.lang] }}{{ page.lang }}</a>
                 </li>
                 {% endif %}
                   {% endunless %}
@@ -42,6 +42,17 @@
           </nav>
 
           <div class="nav-buttons">
+
+            {% for lang in site.languages %}
+              {% if site.lang != lang %}
+                {% if site.lang == "ru" %}
+                  <a class="nav__link" href="{{ site.baseurl_root }}/{{ page.url }}">ru</a>
+                {% else %}
+                  <a class="nav__link" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}">{{ lang }}</a>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
             <i class="nav__icon nav__icon-menu ion ion-md-menu" aria-label="Menu Icon"></i>
             <i class="nav__icon nav__icon-search ion ion-md-search" aria-label="Search Icon"></i>
           </div>
