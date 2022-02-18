@@ -11,7 +11,7 @@ permalink: /posts/:categories/:year/:month/:day/:title
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll/tagging
+  - jekyll-tagging
   - jekyll-multiple-languages-plugin
 
 paginate: 1
