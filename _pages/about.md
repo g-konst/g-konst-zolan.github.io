@@ -1,11 +1,8 @@
 ---
 layout: page
+# title: Обо мне
 permalink: /about/
 image: 01.jpg
-
-titles:
-  en: About
-  ru: Обо мне
 ---
 
-{% tf about.md %}
+text will be added soon

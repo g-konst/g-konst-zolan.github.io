@@ -1,11 +1,12 @@
-github: https://github.com/g-konst
-# instagram: https://instagram.com/k_grudnitskiy # Add your Instagram handle
-# twitter: https://twitter.com/ # Add your Twitter handle
-# facebook: https://facebook.com/ # Add your Facebook handle
-# dribbble: https://dribbble.com/ # Add your Dribbble handle
-# pinterest: https://pinterest.com/ # Add your Pinterest handle
+contacts:
+  github: https://github.com/g-konst
+  # instagram: https://instagram.com/k_grudnitskiy
+  # twitter:
+  # pinterest:
+  # facebook:
+  # dribbble:
 
-disqus-identifier: g-konst
+# disqus-identifier: g-konst
 
 instafeed: false
 instagram-profile: k_grudnitskiy

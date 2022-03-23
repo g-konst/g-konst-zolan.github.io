@@ -5,13 +5,13 @@
         {% if paginator.previous_page %}
 
         {% if paginator.previous_page == 1 %}
-          <a class="previous-link" href="{{ site.baseurl }}">{% t pagination.prev %}</a>
+          <a class="previous-link" href="{{ site.baseurl }}">Пред. статьи</a>
         {% else %}
-          <a class="previous-link" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/">{% t pagination.prev %}</a>
+          <a class="previous-link" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/">Пред. статьи</a>
         {% endif %}
 
         {% else %}
-          <span class="disabled">{% t pagination.prev %}</span>
+          <span class="disabled">Пред. статьи</span>
         {% endif %}
 
         <div class="counter-box">
@@ -33,9 +33,9 @@
         </div>
 
         {% if paginator.next_page %}
-        <a class="next-link" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/">{% t pagination.next %}</a>
+        <a class="next-link" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/">След. статьи</a>
         {% else %}
-          <span class="disabled">{% t pagination.next %}</span>
+          <span class="disabled">След. статьи</span>
         {% endif %}
 
 

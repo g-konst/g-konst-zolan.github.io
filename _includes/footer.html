@@ -8,11 +8,11 @@
       {% include contact-link.html %}
 
       <div class="copyright">
-        <a href="/"><b>{% t main.title %}</b></a> &copy; {{site.time | date: '%Y'}}
+        <a href="/"><b>G-Blog</b></a> &copy; {{site.time | date: '%Y'}}
         {% for page in site.pages %}
           {% unless page.name == 'tags.html' or page.name == '404.html' %}
-            {% if page.titles %}
-              · <a href="{{ page.url | prepend: site.baseurl }}"><b>{{ page.titles[site.lang] }}</b></a>
+            {% if page.title %}
+              · <a href="{{ page.url | prepend: site.baseurl }}"><b>{{ page.title }}</b></a>
             {% endif %}
           {% endunless %}
         {% endfor %} <br/>
