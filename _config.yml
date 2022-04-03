@@ -2,10 +2,6 @@ baseurl: ""
 url: ""
 logo: logo.svg
 
-languages: ["ru"]
-exclude_from_localizations: ["js", "images", "assets"]
-default_locale_in_subfolder: false
-
 markdown: kramdown
 permalink: /posts/:categories/:year/:month/:day/:title
 plugins:
